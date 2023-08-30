@@ -1,0 +1,33 @@
+body{
+ background-color: rgb(255, 255, 255);
+}
+
+.oimg{
+  max-width: 450px;
+}
+main{
+  padding: 100px;
+}
+.fotao{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.oimg1{
+  max-width: 200px;
+  height: fit-content;
+}
+.texto{
+  font-family:cursive;
+  letter-spacing: 2px;
+}
+.his{
+  color: black;
+  font-size: 15px;
+  margin-top: 30px;
+  font-family: cursive;
+}
+.par{
+  margin-top: 30px;
+  font-family: cursive;
+}
