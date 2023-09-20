@@ -1,29 +1,88 @@
+import { useState } from "react";
+import Projeto from "../projeto/Projeto";
 import './Main.css'
-function Main(){
-    return(
-        <main>
-          <div className= "mainmae">
-             <div className= "fotao">
-              <img src='./src/componentes/main/oni.jpeg'  alt='' className='oimg'/>
-              <div>
-                  <img src='./src/componentes/main/amy.jpeg'  alt='' className='oimg1'/>
-                  <img src='./src/componentes/main/nero.jpeg'  alt='' className='oimg1'/>
-                  <img src='./src/componentes/main/melby.jpeg'  alt='' className='oimg1'/>
-                  <h3 className='par'>SINOPSE</h3>
-                <p className='his'>  ONI GAME SE TRATA DE UM JOGO TERROR PSICOLOGICO, PASSADO NA MENTE DE UM PACIENTE EM TRATAMENTO DE HIPNOSE, QUE BUSCA LEMBRAR-SE DE SEU PASSADO E SUPERAR SEUS TRAUMAS DE INFANCIA, O DECORRER DO JOGO, ONI CONHECERÁ TRES AMIGOS, QUE PROPORCIONARÂO, AO FIM DE CADA BATALHA COM SEUS RESPECTIVOS BOSSES, UMA MEMÓRIA REPRESENTADA POR UMA FOTO POLAROID. AO DECORRER DO JOGO ONI CHEGA AO LOCAL DA LUTA FINAL COM O TRAUMA QUE GEROU A SUA PERDA DE MEMORIA E O INFRENTA, GERANDO DOIS POSSIVEIS FINAIS QUE SERÃO DESCOBERTOS PELO JOGADOR.</p>
-              </div>
-              
-            </div>
-          <div className='texto'>
 
-          </div>
-          </div>
-         
-       
 
-        
-        </main>
-    )
-   
+
+
+type ProjetoType = {
+    id: number,
+    titulo:string,
+    sinopse:string,
+    imagem:string
 }
-export default Main
+export default function Main(){
+    //Hook
+    const [texto,setTexto] = useState("")
+
+
+    const projeto:ProjetoType[] = [
+        {
+            id:1,
+            titulo:"conversas",
+            sinopse:"oni e seu eu interior estão conversando",
+            imagem:"/oni.jpeg"
+        },
+        {
+            id:2,
+            titulo:"springtrap",
+            sinopse:"springtrap comemorando aniverssarios",
+            imagem:"/homiruim.jpg"
+        },
+        {
+            id:3,
+            titulo:"jacare triste",
+            sinopse:"ele esta triste com a vida adulta",
+            imagem:"/jare.jpg"
+        }
+
+
+    ]
+    function mudaTexto(e:React.ChangeEvent<HTMLInputElement>){
+        console.log(e.target.value)
+        setTexto(e.target.value)
+    }
+    return(
+        <>
+           <div className='Myname'>
+            <h1>
+                DESENHOS DA TABATA WENDY
+            </h1>
+          </div>
+            <div className="pesquisa">
+               
+                
+                    <p className='texto_digitado'>pesquisar projeto: {texto}</p>
+                <input className='barrapesquisa' type="text" onChange={mudaTexto} />
+                <div>
+                </div>
+            </div>
+
+
+
+
+
+
+           
+
+
+
+
+
+
+            <main className="content-main">
+                {projeto.filter((projeto)=>projeto.titulo.toLowerCase().includes(texto.toLowerCase())).map((projeto:ProjetoType)=>
+                    <Projeto key={projeto.id}
+                           titulo={projeto.titulo}
+                           sinopse={projeto.sinopse}
+                           imagem={projeto.imagem}
+                    />
+                    )
+                }
+
+
+               
+            </main>
+        </>
+    )
+}
