@@ -19,21 +19,21 @@ export default function Main(){
     const projeto:ProjetoType[] = [
         {
             id:1,
-            titulo:"conversas",
-            sinopse:"oni e seu eu interior estão conversando",
-            imagem:"/oni.jpeg"
+            titulo:"GATOS",
+            sinopse:"eu gosto muito de gatos, eles me ajudaram em momentos sombrios",
+            imagem:"/gatos.jpg"
         },
         {
             id:2,
-            titulo:"springtrap",
-            sinopse:"springtrap comemorando aniverssarios",
-            imagem:"/homiruim.jpg"
+            titulo:"VIDEO GAME",
+            sinopse:"gosto de jogar com meu irmão, quando jogo esqueço dos problemas",
+            imagem:"/game.jpg"
         },
         {
             id:3,
-            titulo:"jacare triste",
-            sinopse:"ele esta triste com a vida adulta",
-            imagem:"/jare.jpg"
+            titulo:"MUSICAS",
+            sinopse:"escutar musica me acalma, meu cantor favorito é o lund",
+            imagem:"/music.jpg"
         }
 
 
@@ -46,13 +46,13 @@ export default function Main(){
         <>
            <div className='Myname'>
             <h1>
-                DESENHOS DA TABATA WENDY
+                TABATA WENDY MENEZES MARQUES
             </h1>
           </div>
             <div className="pesquisa">
                
                 
-                    <p className='texto_digitado'>pesquisar projeto: {texto}</p>
+                    <p className='texto_digitado'>pesquisar: {texto}</p>
                 <input className='barrapesquisa' type="text" onChange={mudaTexto} />
                 <div>
                 </div>

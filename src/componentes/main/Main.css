@@ -11,19 +11,22 @@
 .pesquisa{
   padding:10px;
   background-color: rgb(159, 149, 167);
-  /* width: 250px; */
   box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1) ;
 
 }
 .projeto_content{
 transition: background-color 0.5s ease, transform 0.5s ease;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 
 
 }
 .projeto_content:hover{
-background-color:rgb(159, 149, 167);
-transform: scale(1.010);
-
+  background-color:rgb(159, 149, 167);
+  transform: scale(1.010);
+  
 }
 .Myname{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -37,3 +40,18 @@ transform: scale(1.010);
   letter-spacing: 2px;
   font-size: 15px;
 }
+.content-main{
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  column-gap: 30px;
+  background-color: rgb(255, 255, 255);
+  row-gap: 30px;
+}
+.projetos{
+  display: flex;
+  gap: 30px;
+}
+
+
