@@ -6,12 +6,11 @@
   font-size: 1.4rem;
 }
 .barrapesquisa:focus-visible{
-  outline: 1px solid rgba(28, 28, 191, 0.57);
+  outline: 1px solid  color rgb(159, 149, 167);
 }
 .pesquisa{
   padding:10px;
-  background-color: rgb(159, 149, 167);
-  box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1) ;
+  background-color: rgb(255, 255, 255);
 
 }
 .projeto_content{
@@ -34,11 +33,13 @@ align-items: center;
   padding: 0px 460px;
   box-sizing: border-box;
   font-size: 8px;
+  color: rgb(159, 149, 167);
 }
 .texto_digitado{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
   font-size: 15px;
+  color:  rgb(159, 149, 167);;
 }
 .content-main{
   padding: 50px;
