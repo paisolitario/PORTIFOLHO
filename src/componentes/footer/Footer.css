@@ -4,8 +4,8 @@ footer {
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    font-family:cursive;
     margin-top:10vh ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
  
   .footer-section {

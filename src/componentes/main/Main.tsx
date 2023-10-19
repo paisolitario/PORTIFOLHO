@@ -34,8 +34,25 @@ export default function Main(){
             titulo:"MUSICAS",
             sinopse:"escutar musica me acalma, meu cantor favorito é o lund",
             imagem:"/music.jpg"
+        },
+        {
+            id:4,
+            titulo:"ANIMES",
+            sinopse:"gosto de ver animes variados, meu favorito é HxH",
+            imagem:"/assistir.jpg"
+        },
+        {
+            id:5,
+            titulo:"DESENHAR",
+            sinopse:"desenhar é muito legal, eu gosto",
+            imagem:"/desenhar.jpg"
+        }, 
+        {
+            id:6,
+            titulo:"LER MANGÁ",
+            sinopse:"ler manga é legal, te inspira a desenhar bem",
+            imagem:"/manga.jpg"
         }
-
 
     ]
     function mudaTexto(e:React.ChangeEvent<HTMLInputElement>){

@@ -1,13 +1,14 @@
 import './Footer.css'
+import {Link} from "react-router-dom"
 function Footer(){
     return(
         <footer>
              <div className="footer-section">
     <h2>Links Importantes</h2>
     <ul>
-      <li><a href="#">Suporte</a></li>
+      <li><Link to ="/">Inicio</Link></li>
       <li><a href="#">Sobre Nós</a></li>
-      <li><a href="#">Contato</a></li>
+      <li><Link to ="/contato">Suporte</Link></li>
     </ul>
   </div>
  

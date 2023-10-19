@@ -1,6 +1,6 @@
 .barrapesquisa{
   height: 20px;
-  border: 1px solid #bebebe;
+  border: 1px solid rgb(159, 149, 167);
   width: 200px;
   border-radius: 5px;
   font-size: 1.4rem;
@@ -11,6 +11,7 @@
 .pesquisa{
   padding:10px;
   background-color: rgb(255, 255, 255);
+  padding: 0px 50px;
 
 }
 .projeto_content{
@@ -30,7 +31,7 @@ align-items: center;
 .Myname{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
-  padding: 0px 460px;
+  padding: 0px 477px;
   box-sizing: border-box;
   font-size: 8px;
   color: rgb(159, 149, 167);
@@ -39,7 +40,7 @@ align-items: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
   font-size: 15px;
-  color:  rgb(159, 149, 167);;
+  color:  rgb(159, 149, 167);
 }
 .content-main{
   padding: 50px;

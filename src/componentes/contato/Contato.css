@@ -1,0 +1,46 @@
+.contato{
+    
+    display: flex;
+    justify-content: center;
+
+}
+.contatos-container{
+    background-color: rgb(159, 149, 167);
+    padding: 30px;
+    margin-top: 100px;
+    width: 280px;
+    height: 330px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
+  
+}
+.popo{
+    border-bottom: solid 1px  rgb(0, 0, 0);
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    background-color:  rgb(159, 149, 167);
+}
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+textarea{
+    background-color:  rgb(159, 149, 167);
+    border-color: rgb(0, 0, 0);
+    width: 280px;
+    height: 69px ;
+}
+.envio{
+    color: rgb(0, 0, 0);
+    padding: 2px 10px;
+    border-color: rgb(140, 126, 146);
+    border: solid 1px  rgb(0, 0, 0);
+    background-color:rgb(159, 149, 167) ;
+    
+}
